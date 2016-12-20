@@ -1,0 +1,225 @@
+/*
+	CSS para el curso Desarrollo de aplicaciones
+	Version: Accesibilidad 1.0
+	Author: Ricardo Abella	
+	---------------------------------------------------------------------------------------------
+	Document structure:
+	
+	1. 	Resets & Helpers
+	2.	Default Style
+	3.	General Colors
+	4.	General Page Layout Style
+	5.	Header Style
+	7.	Content Style
+	8.	Sidebar Style
+	9.	General Shortcodes
+	10.	Special Pages
+	11. Portfolio
+	12. Untitled
+	13. Sliders
+	14. Footer Style
+	99. Media Queries (Always at bottom)
+*/
+/***************************
+*	1. Resets & Helpers
+****************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/***********************
+*	2. Default Style
+************************/
+html { 
+	display: block;
+	color: #000;
+}
+body {
+	background: #303030 ;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 62.50%;
+	color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+}
+
+
+h1 { font-size: 3.2em; padding: 0.9 0.5em 0.9em;}
+h2 { font-size: 2.6em; color: #000; padding: 0.5em 0.5em 0.5em;}
+h3 { font-size: 2.0em; color: #000; padding: 0.5em 0.5em 0.5em;}
+h4 { font-size: 1.6em; padding: 0.6em 0.5em 0.6em;}
+h5 { font-size: 1.5em; padding: 0.5em 0.5em 0.5em;}
+h6 { font-size: 1.4em; padding: 0.4em 0.5em 0.4em;}
+p, ul, table, td, th, form  { font-size: 1.6em; color: #0099cc; padding: 0.3em 2em 0.3em; line-height: 1.6em;}
+
+
+/***********************
+*	3.	General Colors
+************************/
+/* BACKGROUNDS */
+/* background: #e25454 url('../../imagenes/home-orange-bkg.png') repeat center center; */
+/* background: #663d4e url('../../imagenes/home-burdeos-bkg.png') repeat center center; */
+/* background: #f0ebe2 url('../../imagenes/home-cream-bkg.png') repeat center center; */
+/* background: #f3d284 url('../../imagenes/home-yellow-bkg.png') repeat center center; */
+/* ------------------------------------------------ */
+/* 	
+	BLUE	#e2f4fb	#c5eaf8	#a8dff4	#8ad5f0	#6dcaec	#50c0e9	#33b5e5	#2cb1e1	#24adde	#1da9da	#16a5d7	#0fa1d3	#079dd0	#0099cc
+	MAGENT	#f5eafa	#e5caf2	#ddbcee	#d6adeb	#cf9fe7	#cb97e5	#c58be2	#c182e0	#ba75dc	#b368d9	#ac59d6	#a750d3	#a041d0	#9933cc
+	GREEN	#f0f8db	#e2f0b6	#d3e992	#c5e26d	#b6db49	#a8d324	#99cc00	#92c500	#8abd00	#83b600	#7caf00	#75a800	#6da000	#669900
+	YELLOW	#fff6df	#ffecc0	#ffe3a0	#ffd980	#ffd060	#ffc641	#ffbd21	#ffb61c	#ffae18	#ffa713	#ffa00e	#ff9909	#ff9105	#ff8a00
+	RED		#ffe4e4	#ffcaca	#ffafaf	#ff9494	#ff7979	#ff5f5f	#ff4444	#f83a3a	#f03131	#e92727	#e21d1d	#db1313	#d30a0a	#cc0000
+*/
+ 
+/***********************
+*	4. General Page Layout Style
+************************/
+.left {
+float: left;
+}
+.right {
+float: right;
+}
+.textocentrado{
+	text-align: center;
+	margin: auto;
+}
+.centrado{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.row{
+	display: table-row;
+}
+#wrapper {
+	display: table;
+	width: 80%;
+	min-width:960px;
+	margin:20px auto;
+/*	background-color: #fff;*/
+/*	box-shadow: 0px 0px 10px #000;*/
+}
+#header-wrapper {
+	display: table;
+	width: 100%;
+	border-spacing: 10px 10px;
+/*	background-color: #fff;*/
+}
+#header-content {
+	display: table-row;
+
+}
+#header-logo {
+	display: table-cell;
+	width: 100px;
+	padding: 10px 25px 25px 10px;
+
+	background-color:  	#404040;
+	box-shadow: 0px 0px 5px #000;
+
+
+/*	background-color: #e2f4fb;*/
+/*	border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+#header-text {
+	display: table-cell;
+
+	background-color:  	#404040;
+	box-shadow: 0px 0px 5px #000;
+
+	padding: 15px 15px 15px 15px;
+	vertical-align: middle;
+	text-align: center;
+
+/*	background-color: #e2f4fb;*/
+/*	border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+
+#menu-wrapper {
+	display: table;
+	width: 100%;
+	border-spacing: 10px 10px;
+/*	background-color: #8ad5f0;*/
+}
+#menu-content {
+	display: table-row;
+/*	background-color: #8ad5f0;*/
+}
+#menu-1 {
+	display: table-cell;
+	width: 100%;
+	padding: 10px;
+	
+	background-color:  	#404040;
+	box-shadow: 0px 0px 5px #000;	
+
+	vertical-align: middle;
+	text-align: center;
+
+/*	border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+#content-wrapper {
+	display: table;
+	width: 100%;
+	border-spacing: 10px 5px;
+/*	background-color: #8ad5f0;*/
+}
+.content-content {
+	display: table-row;
+/*	background-color: #8ad5f0;*/
+}
+.content {
+	display: table-cell;
+	padding: 10px;
+
+	background-color:  	#ffecc0;
+	box-shadow: 0px 0px 5px #000;
+
+/*	border-style:solid;
+	border-width:1px;
+	border-color: red;*/
+}
+.c6 {
+	width: 50%;
+}
+.c12 {
+	width: 100%;
+}
+
+ul
+{
+list-style-position:inside;
+} 
+
+/***********************
+*	4. Header Style
+************************/
+
+table, td, th
+{
+border:1px solid black;
+}

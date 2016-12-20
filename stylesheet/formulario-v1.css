@@ -1,0 +1,195 @@
+/***********************
+*	3.	General Colors
+************************/
+/* BACKGROUNDS */
+/* background: #e25454 url('../../imagenes/home-orange-bkg.png') repeat center center; */
+/* background: #663d4e url('../../imagenes/home-burdeos-bkg.png') repeat center center; */
+/* background: #f0ebe2 url('../../imagenes/home-cream-bkg.png') repeat center center; */
+/* background: #f3d284 url('../../imagenes/home-yellow-bkg.png') repeat center center; */
+/* ------------------------------------------------ */
+/* 	
+	BLUE	e2f4fb	c5eaf8	a8dff4	8ad5f0	6dcaec	50c0e9	33b5e5	2cb1e1	24adde	1da9da	16a5d7	0fa1d3	079dd0	0099cc
+	MAGENT	f5eafa	e5caf2	ddbcee	d6adeb	cf9fe7	cb97e5	c58be2	c182e0	ba75dc	b368d9	ac59d6	a750d3	a041d0	9933cc
+	GREEN	f0f8db	e2f0b6	d3e992	c5e26d	b6db49	a8d324	99cc00	92c500	8abd00	83b600	7caf00	75a800	6da000	669900
+	YELLOW	fff6df	ffecc0	ffe3a0	ffd980	ffd060	ffc641	ffbd21	ffb61c	ffae18	ffa713	ffa00e	ff9909	ff9105	ff8a00
+	RED		ffe4e4	ffcaca	ffafaf	ff9494	ff7979	ff5f5f	ff4444	f83a3a	f03131	e92727	e21d1d	db1313	d30a0a	cc0000
+*/
+
+/***********************
+*	Form Layout Style
+************************/
+
+
+#form-wrapper {
+
+	width:80%;
+	background-color: #c5e26d;
+	box-shadow: 0px 0px 10px #000;
+
+}
+.fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form-green{
+	margin: 0px;
+	padding: 0px;
+}
+.form-table{
+	width: 100%;
+	display: table;
+	border-spacing: 0px 15px;
+	border: 1px solid #8abd00;
+	padding-left: 5px;
+}
+.form-row{
+	display: table-row;
+	width: 100%;
+
+}
+.form-cell{
+	display: table-cell;
+	padding-left: 10px;
+	border: 1px solid #000000;
+}
+.md-1{
+	width: 8.33333333%;
+}
+.md-2{
+	width: 16.66666667%;
+}
+.md-3{
+	width: 25%;
+}
+.md-4{
+	width: 33.33333333%;
+}
+.md-5{
+	width: 41.66666667%;
+}
+.md-6{
+	display: relative;
+	width: 50%;
+}
+.md-7{
+	width: 58.33333333%;
+}
+.md-8{
+	width: 66.66666667%;
+}
+.md-9{
+	width: 75%;
+}
+.md-10{
+	width: 83.33333333%;
+}
+.md-11{
+	width: 91.66666667%;
+}
+.md-12{
+	width:100%;
+}
+
+
+
+/***************************
+*	Form Content Style
+****************************/
+
+.form-green{
+	font-family: Arial,sans-serif;
+	font-size: 1.3em;
+	color: #444;
+	font-weight: bolder;
+}
+.form-green .text-box {
+	font-size: 13px;
+	background: #F3F3F3;
+	color: #0099cc;
+	border: 1px solid #8abd00;
+	border-radius: 0;
+	padding: 2px;
+}
+.form-green .select-list {
+	font-size: 13px;
+	background: #F3F3F3;
+	color: #0099cc;
+	border: 1px solid #8abd00;
+	border-radius: 0;
+	padding: 2px;
+
+	-webkit-appearance: none;
+}
+.form-green .select-list option  {
+	padding-left: 10px;
+}
+
+.form-green textarea {
+	font-family: Arial,sans-serif;
+	font-size: 13px;
+	background: #F3F3F3;
+	color: #0099cc;
+	border: 1px solid #8abd00;
+	border-radius: 0;
+	padding: 2px;
+	margin: 0px;
+}
+.form-green input[type="radio"] {
+    display:none;
+}
+.form-green input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../../../imagenes/icon/check_radio_sheet.png) -39px top no-repeat;
+    cursor:pointer;
+}
+.form-green input[type="radio"]:checked + label span {
+    background:url(../../../imagenes/icon/check_radio_sheet.png) -58px top no-repeat;
+}
+.form-green input[type="radio"] + label {
+	color: #444;
+	font-weight: normal;
+}
+.form-green input[type="radio"]:checked + label {
+	color: #0099cc;
+		font-weight: bolder;
+}
+
+
+.form-green input[type="checkbox"] {
+    display:none;
+}
+.form-green input[type="checkbox"] + label {
+	color: red;
+	font-weight: normal;
+}
+.form-green input[type="checkbox"]:checked + label {
+	color: #0099cc;
+	font-weight: normal;
+}
+
+.form-green input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../../../imagenes/icon/check_radio_sheet.png) 0px top no-repeat;
+    cursor:pointer;
+}
+.form-green input[type="checkbox"]:checked + label span {
+    background:url(../../../imagenes/icon/check_radio_sheet.png) -19px top no-repeat;
+ }
+
+.mensaje{
+	font-size: 80%;
+	color: #444;
+	font-weight: normal;
+
+}
+.error{
